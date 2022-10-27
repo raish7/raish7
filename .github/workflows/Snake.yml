@@ -4,15 +4,15 @@
 
 name: Generate Snake
 
-# Controls when the action will run. This action runs every 30 minutes.
+# Controls when the action will run. This action runs every month.
 
 on:
   push:
     branches:
       - main
   schedule:
-      # every 30 minutes
-    - cron: "*/30 * * * *"
+      # every month
+    - cron: "0 * * */1 *"
 
 # This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
